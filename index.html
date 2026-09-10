@@ -3,215 +3,85 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Portfolio of Tshedza Lungelo Mabaso, aspiring Data Engineer and Data Scientist.">
-<title>Tshedza Lungelo Mabaso | Data Portfolio</title>
+<meta name="description" content="Portfolio of Tshedza Lungelo Mabaso, BCom Information Systems student and aspiring Data Engineer and Data Scientist.">
+<title>Tshedza Lungelo Mabaso | Data & Technology Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<script defer src="script.js"></script>
 </head>
 <body>
-
-<nav class="nav">
-  <a class="brand" href="#home" aria-label="Home">TL<span>M</span></a>
-  <div class="links">
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#learning">Learning</a>
-    <a href="#contact">Contact</a>
+<div class="page-grid" aria-hidden="true"></div>
+<nav class="nav" aria-label="Primary navigation">
+  <a class="brand" href="#home" aria-label="Tshedza Lungelo Mabaso home"><span class="brand-mark">T</span><span class="brand-copy">Tshedza<span>.</span></span></a>
+  <button class="menu-btn" id="menuBtn" aria-label="Open navigation" aria-expanded="false">☰</button>
+  <div class="links" id="navLinks">
+    <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#education">Education</a><a href="#contact">Contact</a>
   </div>
 </nav>
 
 <header class="hero" id="home">
   <div class="hero-text">
-    <p class="tag">DATA • CODE • INNOVATION</p>
-    <h1>Tshedza Lungelo Mabaso</h1>
-    <h2>Aspiring Data Engineer & Data Scientist</h2>
-    <p class="lead">
-      IT student developing practical skills in programming, data analysis and modern
-      technology, with a goal of building data-driven solutions that solve real-world problems.
-    </p>
-    <div class="hero-actions">
-      <a class="btn" href="Tshedza_Lungelo_Mabaso_CV.pdf" download>Download CV</a>
-      <a class="btn outline" href="#projects">Explore Projects</a>
-    </div>
-    <div class="mini-links">
-      <a href="mailto:mlungesta@gmail.com">Email</a>
-      <a href="https://github.com/Lungelo-gif" target="_blank" rel="noopener noreferrer">GitHub</a>
-      <a href="https://www.linkedin.com/in/lungelo-mabaso-3bb61b306/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-    </div>
+    <div class="hero-kicker"><span></span>BCom Information Systems • University of Johannesburg</div>
+    <h1>I build with <em>data, code</em> and curiosity.</h1>
+    <p class="hero-role">Tshedza Lungelo Mabaso — aspiring Data Engineer & Data Scientist.</p>
+    <p class="lead">I am a University of Johannesburg student building practical experience across data analysis, programming, AI-assisted workflows and information systems. I learn by creating projects that turn ideas and raw information into useful digital solutions.</p>
+    <div class="hero-actions"><a class="btn" href="#projects">Explore my work ↗</a><a class="btn secondary" href="Tshedza_Lungelo_Mabaso_CV.pdf" target="_blank">View CV</a></div>
+    <div class="social-row"><a href="mailto:mlungesta@gmail.com">Email</a><a href="https://github.com/Lungelo-gif" target="_blank" rel="noopener">GitHub</a><a href="https://www.linkedin.com/in/lungelo-mabaso-3bb61b306/" target="_blank" rel="noopener">LinkedIn</a></div>
   </div>
-
-  <div class="profile-box">
-    <div class="profile-ring">
-      <img src="assets/profile.jpg" alt="Tshedza Lungelo Mabaso">
-    </div>
-    <div class="availability">
-      <span class="dot"></span>
-      Open to internships & entry-level opportunities
-    </div>
+  <div class="hero-side">
+    <div class="portrait-card"><div class="portrait-frame"><img src="assets/profile.jpg" alt="Tshedza Lungelo Mabaso"></div><div class="portrait-caption"><b>Based in Johannesburg</b><span>Open to internships & graduate opportunities</span></div></div>
+    <div class="hero-stats"><div><b>4</b><span>featured projects</span></div><div><b>2027</b><span>final study year</span></div><div><b>2</b><span>Microsoft exams planned</span></div></div>
   </div>
 </header>
 
 <main>
 <section id="about">
-  <div class="section-heading">
-    <p class="eyebrow">01 — ABOUT</p>
-    <h2>Building toward a career in data.</h2>
-  </div>
-  <div class="panel">
-    <p>
-      I am Tshedza Lungelo Mabaso, an IT student with a strong interest in Data Engineering
-      and Data Science. I enjoy learning how software, databases and analytics can work
-      together to turn raw information into useful solutions.
-    </p>
-    <p>
-      My current learning includes Python, C#, SQL, Microsoft Excel, Azure Data Fundamentals
-      and Power BI. I am also building practical projects to strengthen my problem-solving
-      and technical skills.
-    </p>
-  </div>
+  <div class="section-heading"><p class="eyebrow">01 / ABOUT</p><h2>Learning the systems behind better decisions.</h2></div>
+  <div class="about-grid"><div class="panel large"><p>I am currently completing a <strong>BCom in Information Systems at the University of Johannesburg</strong>, with my final year expected in 2027. My long-term goal is to work in Data Engineering and Data Science, where I can combine programming, databases, analytics and business understanding.</p><p>My strongest programming areas are <strong>SQL and C#</strong>. I am continuing to improve Python and my web-development skills through projects, while applying Microsoft Excel and Data Analysis in my UJ studies.</p></div><div class="about-note"><span>Currently focused on</span><b>Data • Information Systems • AI • Analytics</b><p>Building practical evidence through coursework, hackathons and portfolio projects.</p></div></div>
 </section>
 
 <section id="skills">
-  <div class="section-heading">
-    <p class="eyebrow">02 — SKILLS</p>
-    <h2>Tools I am learning and using.</h2>
-  </div>
-  <div class="skills">
-    <div><span>01</span><b>Python</b><small>Programming & data analysis</small></div>
-    <div><span>02</span><b>SQL</b><small>Queries & data fundamentals</small></div>
-    <div><span>03</span><b>C#</b><small>Programming fundamentals</small></div>
-    <div><span>04</span><b>Azure</b><small>Data fundamentals — in progress</small></div>
-    <div><span>05</span><b>Power BI</b><small>Data visualisation — learning</small></div>
-    <div><span>06</span><b>Excel</b><small>Formulas, charts & analysis</small></div>
-    <div><span>07</span><b>HTML/CSS</b><small>Responsive web interfaces</small></div>
-    <div><span>08</span><b>GitHub</b><small>Source-code portfolio</small></div>
+  <div class="section-heading"><p class="eyebrow">02 / SKILLS</p><h2>Tools I use — with honest skill levels.</h2><p class="section-copy">I prefer to show where I am strong and where I am still developing rather than overstate experience.</p></div>
+  <div class="skills-grid">
+    <article class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/microsoftsqlserver/microsoftsqlserver-original.svg" alt="SQL icon"><div><h3>SQL</h3><p>Queries, relational data and database fundamentals.</p><span class="level strong">● Proficient</span></div></article>
+    <article class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" alt="C# icon"><div><h3>C#</h3><p>Programming, logic and software-development coursework.</p><span class="level strong">● Proficient</span></div></article>
+    <article class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="Python icon"><div><h3>Python</h3><p>Data projects, CSV processing and programming practice.</p><span class="level developing">◆ Developing</span></div></article>
+    <article class="skill-card"><div class="skill-symbol excel">X</div><div><h3>Microsoft Excel</h3><p>Academic data analysis, formulas, charts and dashboards.</p><span class="level applied">✓ Applied at UJ</span></div></article>
+    <article class="skill-card"><div class="skill-symbol chart">▥</div><div><h3>Data Analysis</h3><p>Structuring, interpreting and presenting data for insight.</p><span class="level applied">✓ Academic experience</span></div></article>
+    <article class="skill-card"><div class="skill-symbol powerbi">▥</div><div><h3>Power BI</h3><p>Visualisation and reporting; PL-300 preparation in progress.</p><span class="level developing">◆ Developing</span></div></article>
+    <article class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azure/azure-original.svg" alt="Microsoft Azure icon"><div><h3>Microsoft Azure</h3><p>Data and cloud fundamentals; DP-900 preparation in progress.</p><span class="level developing">◆ Developing</span></div></article>
+    <article class="skill-card"><div class="web-stack"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="HTML"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="CSS"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="JavaScript"></div><div><h3>HTML / CSS / JavaScript</h3><p>Responsive interfaces built while learning through projects.</p><span class="level beginner">○ Beginner</span></div></article>
+    <article class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="GitHub icon" class="invert"><div><h3>GitHub</h3><p>Project hosting, repositories and GitHub Pages deployment.</p><span class="level developing">◆ Developing</span></div></article>
   </div>
 </section>
 
 <section id="projects">
-  <div class="section-heading">
-    <p class="eyebrow">03 — PROJECTS</p>
-    <h2>Selected practical work.</h2>
-    <p class="section-copy">
-      These projects show my growing experience across web development, spreadsheet analytics
-      and Python data processing.
-    </p>
-  </div>
+  <div class="section-heading"><p class="eyebrow">03 / PROJECTS</p><h2>Click a project. See the actual work.</h2><p class="section-copy">Each featured project links to a live prototype or project evidence — not just a description.</p></div>
+  <div class="project-grid">
+    <article class="project-card featured"><a class="project-media" href="https://lungelo-gif.github.io/uj-compass/" target="_blank" rel="noopener"><img src="assets/project-uj-compass.png" alt="UJ Compass student support prototype"><span class="open-chip">Open live site ↗</span></a><div class="project-body"><div class="project-top"><span>TEAM HACKATHON • UJ DEV SOCIETY</span><span>01</span></div><h3>UJ Compass</h3><p>A student support and communication hub developed with my team during a UJ DEV Society hackathon. The prototype combines campus updates, service routing, support-request tracking, digital queues, accessibility features and simulated campus-bus tracking.</p><div class="badges"><span>Team Project</span><span>Information Systems</span><span>HTML/CSS/JS</span><span>UX</span></div><div class="project-actions"><a href="https://lungelo-gif.github.io/uj-compass/" target="_blank" rel="noopener">Live Demo</a><a class="ghost-link" href="https://github.com/Lungelo-gif/uj-compass" target="_blank" rel="noopener">GitHub</a></div></div></article>
 
-  <div class="project-list">
+    <article class="project-card"><a class="project-media" href="https://lungelo-gif.github.io/sidekick-ai-productivity-assistant/" target="_blank" rel="noopener"><img src="assets/project-sidekick.svg" alt="Sidekick workplace productivity assistant"><span class="open-chip">Open live site ↗</span></a><div class="project-body"><div class="project-top"><span>AI PRODUCTIVITY • PROMPT ENGINEERING</span><span>02</span></div><h3>Sidekick</h3><p>An AI-powered workplace productivity assistant prototype for professional emails, meeting summaries, task planning, research support and contextual quick chat. Built with prompt engineering, responsible-AI safeguards, local persistence and accessible UX.</p><div class="badges"><span>AI</span><span>Prompt Engineering</span><span>JavaScript</span><span>GitHub Pages</span></div><div class="project-actions"><a href="https://lungelo-gif.github.io/sidekick-ai-productivity-assistant/" target="_blank" rel="noopener">Live Demo</a><a class="ghost-link" href="https://github.com/Lungelo-gif/sidekick-ai-productivity-assistant" target="_blank" rel="noopener">GitHub</a></div></div></article>
 
-    <article class="project-card">
-      <a class="project-image" href="assets/uj-connect-preview.png" target="_blank" rel="noopener noreferrer" aria-label="Open UJ Connect screenshot">
-        <img src="assets/uj-connect-preview.png" alt="UJ Connect campus feed interface">
-      </a>
-      <div class="project-content">
-        <div class="project-meta"><span>WEB DEVELOPMENT</span><span>01</span></div>
-        <h3>UJ Connect — Student Support & Digital Queue Hub</h3>
-        <p>
-          A responsive student-support concept that brings campus information, services,
-          support requests and digital queue functionality into one interface.
-        </p>
-        <div class="badges">
-          <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Responsive UI</span>
-        </div>
-        <ul>
-          <li>Campus announcements and service discovery</li>
-          <li>Support request and ticket tracking</li>
-          <li>Remote digital queue concept</li>
-          <li>Accessibility and mobile-responsive design</li>
-        </ul>
-        <a class="text-link" href="assets/uj-connect-preview.png" target="_blank" rel="noopener noreferrer">View project evidence →</a>
-      </div>
-    </article>
+    <article class="project-card"><a class="project-media" href="projects/sales-dashboard.html"><img src="assets/sales-dashboard-preview.png" alt="Excel sales analysis dashboard"><span class="open-chip">View project ↗</span></a><div class="project-body"><div class="project-top"><span>EXCEL • DATA ANALYSIS</span><span>03</span></div><h3>Sales Data Analysis Dashboard</h3><p>A guided analytics project that transforms electronics sales records into monthly summaries, KPIs and visual trends for management reporting.</p><div class="badges"><span>Excel</span><span>KPIs</span><span>Charts</span><span>Data Analysis</span></div><div class="project-actions"><a href="projects/sales-dashboard.html">View Project</a><a class="ghost-link" href="projects/sales-dashboard/Lungelo_Sales_Data_Analysis_Project.xlsx">Excel File</a></div></div></article>
 
-    <article class="project-card reverse">
-      <a class="project-image" href="assets/sales-dashboard-preview.png" target="_blank" rel="noopener noreferrer" aria-label="Open sales dashboard screenshot">
-        <img src="assets/sales-dashboard-preview.png" alt="Sales Data Analysis Dashboard in Excel">
-      </a>
-      <div class="project-content">
-        <div class="project-meta"><span>DATA ANALYSIS • AI-ASSISTED</span><span>02</span></div>
-        <h3>Sales Data Analysis Dashboard</h3>
-        <p>
-          A guided Excel analytics project designed to transform raw electronics sales records
-          into monthly summaries, KPIs and visual trends for business decision-making.
-        </p>
-        <div class="badges">
-          <span>Microsoft Excel</span><span>Formulas</span><span>KPIs</span><span>Charts</span>
-        </div>
-        <ul>
-          <li>Monthly sales and revenue summaries</li>
-          <li>KPI calculations and trend analysis</li>
-          <li>Dashboard layout for management reporting</li>
-        </ul>
-        <a class="text-link" href="assets/sales-dashboard-preview.png" target="_blank" rel="noopener noreferrer">View project evidence →</a>
-      </div>
-    </article>
-
-    <article class="project-card">
-      <a class="project-image" href="assets/student-analyzer-data-preview.png" target="_blank" rel="noopener noreferrer" aria-label="Open student performance project screenshot">
-        <img src="assets/student-analyzer-data-preview.png" alt="CSV input data used by the Student Performance Data Analyzer">
-      </a>
-      <div class="project-content">
-        <div class="project-meta"><span>PYTHON DATA PROJECT • AI-ASSISTED</span><span>03</span></div>
-        <h3>Student Performance Data Analyzer</h3>
-        <p>
-          A beginner Python project that reads structured student data from CSV, calculates
-          averages, ranks performance and identifies subject-level strengths and areas for improvement.
-        </p>
-        <div class="badges">
-          <span>Python</span><span>CSV</span><span>Functions</span><span>Data Analysis</span>
-        </div>
-        <ul>
-          <li>Reads structured CSV input data</li>
-          <li>Calculates student and subject averages</li>
-          <li>Sorts results and assigns performance categories</li>
-        </ul>
-        <a class="text-link" href="assets/student-analyzer-data-preview.png" target="_blank" rel="noopener noreferrer">View project evidence →</a>
-      </div>
-    </article>
-
+    <article class="project-card"><a class="project-media" href="projects/student-analyzer.html"><img src="assets/student-analyzer-data-preview.png" alt="Student performance analyzer data preview"><span class="open-chip">View code ↗</span></a><div class="project-body"><div class="project-top"><span>PYTHON • DATA PROJECT</span><span>04</span></div><h3>Student Performance Data Analyzer</h3><p>A beginner Python project that reads structured CSV data, calculates student and subject averages, ranks performance and identifies strengths and improvement areas.</p><div class="badges"><span>Python</span><span>CSV</span><span>Functions</span><span>Analysis</span></div><div class="project-actions"><a href="projects/student-analyzer.html">View Project</a><a class="ghost-link" href="projects/student-analyzer/student_analyzer.py">Python File</a></div></div></article>
   </div>
 </section>
 
-<section id="learning">
-  <div class="section-heading">
-    <p class="eyebrow">04 — EDUCATION & LEARNING</p>
-    <h2>Continuous development.</h2>
-  </div>
-  <div class="timeline">
-    <div><span>2023</span><h3>National Senior Certificate</h3><p>Matric completed.</p></div>
-    <div><span>Current</span><h3>Microsoft Azure Data Fundamentals</h3><p>In progress; certification exam planned/scheduled.</p></div>
-    <div><span>Current</span><h3>Power BI</h3><p>Learning in progress; exam planned/scheduled.</p></div>
-    <div><span>Learning</span><h3>4IR Programme — University of Johannesburg</h3><p>Technology learning and development.</p></div>
-    <div><span>Learning</span><h3>FNB App Academy</h3><p>Application-development learning programme.</p></div>
-    <div><span>Learning</span><h3>Entrepreneurship</h3><p>Business and entrepreneurship learning material.</p></div>
+<section id="education">
+  <div class="section-heading"><p class="eyebrow">04 / EDUCATION & CREDENTIALS</p><h2>Education, achievements and what I’m working toward.</h2><p class="section-copy">My education and certification cards now use custom picture-based visuals built from the portfolio images I selected.</p></div>
+  <div class="credential-grid">
+    <article class="credential-card wide"><img src="assets/education-uj.png" alt="University of Johannesburg education card"><div class="credential-copy"><span class="status current">Current</span><h3>BCom in Information Systems</h3><p>University of Johannesburg • 2025–Present</p><b>Final year expected in 2027</b></div></article>
+    <article class="credential-card"><img src="assets/credential-4ir.png" alt="4IR programme completed badge"><div class="credential-copy"><span class="status complete">Completed</span><h3>4IR Programme</h3><p>University of Johannesburg</p><b>Technology & future-skills development</b></div></article>
+    <article class="credential-card"><img src="assets/credential-ail.png" alt="Advanced Information Literacy card"><div class="credential-copy"><span class="status complete">Awarded</span><h3>Advanced Information Literacy</h3><p>University of Johannesburg</p><b>Academic achievement</b></div></article>
+    <article class="credential-card"><img src="assets/credential-dp900.png" alt="DP-900 Azure Data Fundamentals card"><div class="credential-copy"><span class="status progress">Exam scheduled</span><h3>Microsoft DP-900</h3><p>Azure Data Fundamentals</p><b>Target: complete by end of September 2026</b></div></article>
+    <article class="credential-card"><img src="assets/credential-pl300.png" alt="PL-300 Power BI Data Analyst card"><div class="credential-copy"><span class="status progress">Exam scheduled</span><h3>Microsoft PL-300</h3><p>Power BI Data Analyst</p><b>Target: complete by end of September 2026</b></div></article>
   </div>
 </section>
 
-<section id="contact">
-  <div class="contact-panel">
-    <div>
-      <p class="eyebrow">05 — CONTACT</p>
-      <h2>Let’s connect.</h2>
-      <p>
-        I am interested in opportunities where I can continue learning and contribute to
-        technology, analytics and data-focused projects.
-      </p>
-    </div>
-    <div class="contact">
-      <a href="mailto:mlungesta@gmail.com"><b>Email</b><span>mlungesta@gmail.com</span></a>
-      <a href="https://github.com/Lungelo-gif" target="_blank" rel="noopener noreferrer"><b>GitHub</b><span>Lungelo-gif</span></a>
-      <a href="https://www.linkedin.com/in/lungelo-mabaso-3bb61b306/" target="_blank" rel="noopener noreferrer"><b>LinkedIn</b><span>Lungelo Mabaso</span></a>
-    </div>
-  </div>
-</section>
+<section id="contact"><div class="contact-panel"><div><p class="eyebrow">05 / CONTACT</p><h2>Let’s build something useful.</h2><p>I am looking for internship and graduate opportunities where I can keep learning while contributing to data, analytics, information systems and technology projects.</p></div><div class="contact-links"><a href="mailto:mlungesta@gmail.com"><span>Email</span><b>mlungesta@gmail.com</b>↗</a><a href="https://github.com/Lungelo-gif" target="_blank" rel="noopener"><span>GitHub</span><b>Lungelo-gif</b>↗</a><a href="https://www.linkedin.com/in/lungelo-mabaso-3bb61b306/" target="_blank" rel="noopener"><span>LinkedIn</span><b>Lungelo Mabaso</b>↗</a></div></div></section>
 </main>
-
-<footer>
-  <span>Tshedza Lungelo Mabaso</span>
-  <span>Data • Code • Innovation</span>
-  <span>© 2026</span>
-</footer>
-
-</body>
-</html>
+<footer><span>Tshedza Lungelo Mabaso</span><span>BCom Information Systems • Data • Code • Analytics</span><span>© 2026</span></footer>
+</body></html>

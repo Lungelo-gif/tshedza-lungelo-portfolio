@@ -1,0 +1,73 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Student Performance Data Analyzer | Tshedza Lungelo Mabaso</title><link rel="stylesheet" href="style-project.css"></head><body><main class="wrap"><a class="back" href="../index.html#projects">← Back to portfolio</a><p class="kicker">PYTHON • CSV • DATA ANALYSIS</p><h1>Student Performance Data Analyzer</h1><p class="lead">A beginner Python project that reads CSV student marks, calculates averages, ranks performance and identifies subject-level strengths and areas for improvement.</p><img class="heroimg" src="../assets/student-analyzer-data-preview.png" alt="Student analyzer dataset preview"><div class="grid"><section><h2>What it demonstrates</h2><ul><li>Reading structured CSV data</li><li>Functions, loops and conditions</li><li>Average calculations and sorting</li><li>Simple data analysis and performance categories</li></ul></section><section><h2>Project files</h2><div class="buttons"><a class="btn" href="student-analyzer/student_analyzer.py">Open Python file</a><a class="btn ghost" href="student-analyzer/student_scores.csv">Open CSV data</a></div></section></div><section class="code"><h2>Python source</h2><pre>import csv
+from pathlib import Path
+
+DATA_FILE = Path(__file__).with_name(&quot;student_scores.csv&quot;)
+SUBJECTS = [&quot;Python&quot;, &quot;SQL&quot;, &quot;Excel&quot;, &quot;Power_BI&quot;]
+
+def load_students(filename):
+    with open(filename, newline=&quot;&quot;, encoding=&quot;utf-8&quot;) as file:
+        return list(csv.DictReader(file))
+
+def calculate_average(student):
+    scores = [float(student[subject]) for subject in SUBJECTS]
+    return sum(scores) / len(scores)
+
+def performance_level(average):
+    if average &gt;= 75:
+        return &quot;Excellent&quot;
+    if average &gt;= 60:
+        return &quot;Good&quot;
+    if average &gt;= 50:
+        return &quot;Satisfactory&quot;
+    return &quot;Needs Improvement&quot;
+
+def subject_averages(students):
+    result = {}
+    for subject in SUBJECTS:
+        scores = [float(student[subject]) for student in students]
+        result[subject] = sum(scores) / len(scores)
+    return result
+
+def main():
+    students = load_students(DATA_FILE)
+    for student in students:
+        student[&quot;Average&quot;] = calculate_average(student)
+        student[&quot;Performance&quot;] = performance_level(student[&quot;Average&quot;])
+
+    ranked = sorted(students, key=lambda s: s[&quot;Average&quot;], reverse=True)
+    subject_stats = subject_averages(students)
+
+    print(&quot;STUDENT PERFORMANCE ANALYSIS&quot;)
+    print(&quot;=&quot; * 60)
+    for student in ranked:
+        print(f&quot;{student[&#x27;Name&#x27;]:&lt;14} {student[&#x27;Average&#x27;]:&gt;5.1f}%  {student[&#x27;Performance&#x27;]}&quot;)
+
+    class_average = sum(s[&quot;Average&quot;] for s in students) / len(students)
+    print(f&quot;\nClass average: {class_average:.1f}%&quot;)
+    print(f&quot;Top student: {ranked[0][&#x27;Name&#x27;]} ({ranked[0][&#x27;Average&#x27;]:.1f}%)&quot;)
+
+    print(&quot;\nSUBJECT AVERAGES&quot;)
+    for subject, average in subject_stats.items():
+        print(f&quot;{subject.replace(&#x27;_&#x27;, &#x27; &#x27;):&lt;12}: {average:.1f}%&quot;)
+
+    strongest = max(subject_stats, key=subject_stats.get)
+    weakest = min(subject_stats, key=subject_stats.get)
+    print(f&quot;\nStrongest subject: {strongest.replace(&#x27;_&#x27;, &#x27; &#x27;)}&quot;)
+    print(f&quot;Area for improvement: {weakest.replace(&#x27;_&#x27;, &#x27; &#x27;)}&quot;)
+
+if __name__ == &quot;__main__&quot;:
+    main()
+</pre></section><section class="code"><h2>Sample output</h2><pre>STUDENT PERFORMANCE ANALYSIS
+==================================================
+Naledi: 89.5% - Excellent
+Lerato: 87.2% - Excellent
+Ayanda: 82.8% - Excellent
+Amahle: 77.2% - Excellent
+Sipho: 74.0% - Good
+Kabelo: 69.8% - Good
+Thabo: 60.8% - Good
+Mpho: 56.0% - Satisfactory
+
+Top student: Naledi (89.5%)
+Strongest subject: Excel
+Area for improvement: Python</pre></section></main></body></html>

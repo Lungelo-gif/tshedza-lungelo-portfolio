@@ -1,0 +1,14 @@
+STUDENT PERFORMANCE ANALYSIS
+==================================================
+Naledi: 89.5% - Excellent
+Lerato: 87.2% - Excellent
+Ayanda: 82.8% - Excellent
+Amahle: 77.2% - Excellent
+Sipho: 74.0% - Good
+Kabelo: 69.8% - Good
+Thabo: 60.8% - Good
+Mpho: 56.0% - Satisfactory
+
+Top student: Naledi (89.5%)
+Strongest subject: Excel
+Area for improvement: Python
