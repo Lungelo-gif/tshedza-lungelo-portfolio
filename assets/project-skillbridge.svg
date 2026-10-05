@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#112b32"/><stop offset="1" stop-color="#1c6958"/></linearGradient><linearGradient id="card" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#ffffff"/><stop offset="1" stop-color="#edf6f2"/></linearGradient></defs>
+<rect width="1200" height="700" fill="#edf2f2"/>
+<rect x="46" y="42" width="1108" height="616" rx="28" fill="url(#g)"/>
+<rect x="82" y="84" width="220" height="534" rx="18" fill="#112b32" stroke="#ffffff22"/>
+<circle cx="118" cy="126" r="20" fill="#3ed19d"/><text x="150" y="135" fill="#fff" font-family="Arial" font-size="30" font-weight="700">SkillBridge <tspan fill="#61e1b3">AI</tspan></text>
+<text x="110" y="194" fill="#97b7b3" font-family="Arial" font-size="17">OVERVIEW</text><text x="110" y="239" fill="#cde3da" font-family="Arial" font-size="17">SKILLPROOF</text><text x="110" y="284" fill="#cde3da" font-family="Arial" font-size="17">OPPORTUNITIES</text><text x="110" y="329" fill="#cde3da" font-family="Arial" font-size="17">CV &amp; ATS CHECK</text><text x="110" y="374" fill="#cde3da" font-family="Arial" font-size="17">GROWTH ROADMAP</text><text x="110" y="419" fill="#cde3da" font-family="Arial" font-size="17">AI CAREER COACH</text>
+<rect x="332" y="84" width="780" height="534" rx="18" fill="#f7faf9"/>
+<text x="376" y="142" fill="#2b9d79" font-family="Arial" font-size="16" font-weight="700">UJ × VODACOM × AWS HACKATHON 2026</text>
+<text x="376" y="198" fill="#152b37" font-family="Arial" font-size="42" font-weight="800">Skills-to-Work Bridge</text>
+<text x="376" y="237" fill="#688083" font-family="Arial" font-size="21">Match skills to opportunities. Prove readiness. Build a growth path.</text>
+<rect x="376" y="278" width="214" height="120" rx="14" fill="url(#card)" stroke="#d9e5df"/><text x="400" y="315" fill="#738889" font-family="Arial" font-size="16">SkillProof</text><text x="400" y="365" fill="#147758" font-family="Arial" font-size="34" font-weight="700">Assess</text>
+<rect x="614" y="278" width="214" height="120" rx="14" fill="url(#card)" stroke="#d9e5df"/><text x="638" y="315" fill="#738889" font-family="Arial" font-size="16">CV &amp; ATS</text><text x="638" y="365" fill="#147758" font-family="Arial" font-size="34" font-weight="700">Review</text>
+<rect x="852" y="278" width="214" height="120" rx="14" fill="url(#card)" stroke="#d9e5df"/><text x="876" y="315" fill="#738889" font-family="Arial" font-size="16">AI Coach</text><text x="876" y="365" fill="#147758" font-family="Arial" font-size="34" font-weight="700">Guide</text>
+<rect x="376" y="438" width="690" height="118" rx="16" fill="#143a38"/><text x="402" y="477" fill="#8cf0be" font-family="Arial" font-size="16" font-weight="700">AWS-BASED HACKATHON PROTOTYPE</text><text x="402" y="514" fill="#daf1e6" font-family="Arial" font-size="18">Amplify • Lambda • Bedrock • Amazon Quick • Python/FastAPI</text><text x="402" y="541" fill="#9fc8bc" font-family="Arial" font-size="14">Fictional candidates and opportunities for demonstration only.</text>
+</svg>

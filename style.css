@@ -42,3 +42,8 @@
   }
   .credential-card:not(.wide) .credential-copy{min-height:0}
 }
+
+/* October 2026 portfolio update */
+.experience-list{display:grid;gap:14px}.experience-card{display:grid;grid-template-columns:190px 1fr;gap:28px;border:1px solid var(--line);background:linear-gradient(145deg,#151b22,#101419);border-radius:20px;padding:25px}.experience-time{font:800 10px ui-monospace,monospace;letter-spacing:.08em;color:var(--gold);padding-top:7px}.experience-card h3{font-size:23px;margin:10px 0 2px}.experience-org{color:#d9e2ec!important;font-weight:750;margin:0 0 10px!important}.experience-card p{color:var(--muted);font-size:12.5px;margin-bottom:0}.credential-link{text-decoration:none;color:inherit;transition:.22s}.credential-link:hover{transform:translateY(-3px);border-color:rgba(241,199,91,.55);box-shadow:0 20px 45px rgba(0,0,0,.2)}.view-proof{font-size:9px;font-weight:850;text-transform:uppercase;letter-spacing:.06em;color:var(--gold);margin-top:11px}.exam-card{grid-template-columns:190px 1fr}.exam-icon{min-height:205px;display:grid;place-items:center;background:linear-gradient(145deg,#0d4c8e,#4da3ff);font:800 56px Sora,sans-serif;color:white}.credential-card>img{object-position:center}.credential-card:not(.wide)>img{background:#fff}@media(max-width:760px){.experience-card{grid-template-columns:1fr;gap:10px}.exam-card{grid-template-columns:1fr}.exam-icon{min-height:160px}}
+
+.aws{background:#232f3e;color:#ff9900;font-size:12px;letter-spacing:.03em}
