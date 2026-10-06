@@ -57,3 +57,18 @@
 .certificate-action:hover{background:var(--gold);color:#18140b;border-color:var(--gold);transform:translateY(-1px)}
 .credential-card{transition:.2s}.credential-card:not(.wide):hover{border-color:rgba(241,199,91,.34)}
 @media(max-width:760px){.credential-card:not(.wide)>img{aspect-ratio:760/340;height:auto}.credential-card:not(.wide) .credential-copy{min-height:0}}
+
+/* Uploaded credential pictures: share the PL-300 / DP-900 image proportions. */
+.credential-card:not(.wide)>img.credential-picture{
+  width:100%;
+  height:auto;
+  min-height:0;
+  aspect-ratio:760/340;
+  object-fit:contain;
+  object-position:center;
+  padding:16px;
+  background:#0b1118;
+}
+.credential-card:not(.wide)>img.credential-picture.logo-white{
+  background:#fff;
+}
